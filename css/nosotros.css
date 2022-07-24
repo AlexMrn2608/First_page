@@ -92,7 +92,10 @@ section div{
 
 
 }
-
+a {
+    text-decoration:none;
+    color: white;
+}
 
 
 .footer{
