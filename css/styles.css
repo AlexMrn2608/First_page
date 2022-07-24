@@ -55,6 +55,8 @@ body{
 
 
 
+
+
 .main{
     grid-column: 1/5;
     display: flex;
@@ -88,16 +90,51 @@ article h1{
 
 }
 
+
+
 .footer{
     grid-column: 1/6;
     background-color: #1e272e;
     color: white;
 }
 
-@media screen  {
-    .main {
-       width: 100%;
+@media screen and (max-width: 1024px) {
+    .main{
+        grid-column: 1/-1;
     }
+
+    .aside{
+       
+        grid-column: 1/-1;
+    }
+
+    aside > div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .fondologo{
+        display: flex;
+        flex-direction: column;
+        }
+
+     .header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+     }
+     
+     .nav{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+     }
 }
     
     
