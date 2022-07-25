@@ -57,6 +57,26 @@ body{
         padding: 10px;}
 
 
+form{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(8, auto);
+
+}        
+
+.divname{
+    grid-column: 1/3;
+}
+
+
+.divsurname{
+    grid-column: 3/5;
+}
+
+
+
+
+
 .footer{
         grid-column: 1/6;
         background-color: #1e272e;
